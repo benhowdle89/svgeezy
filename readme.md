@@ -11,4 +11,4 @@ It checks if the browser supports SVGs, if not, changes the _src_ of the image t
 	
 The first parameter is a class to tell the code not to check. This may be because you have no fallbacks for certain SVGs. 
 
-The second is a filetype, this can be anything you want, just make sure the file path resolves to an image. ie. '/images/logo.svg', will be replaced with '/images/logo.png'.
+The second is a filetype, this can be anything you want, just make sure the file path resolves to an image. ie. _'/images/logo.svg'_, will be replaced with _'/images/logo.png'_.
