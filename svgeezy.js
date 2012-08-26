@@ -21,11 +21,7 @@ var svgeezy = function(){
 
 		init: function(avoid, filetype){
 			this.avoid = (avoid !== undefined && avoid !== '') ? avoid : '';
-			if(filetype !== undefined && filetype !== ''){
-				 this.filetype = filetype;
-			} else {
-				 this.filetype = 'png';
-			}
+			this.filetype = (filetype !== undefined && filetype !== '') ? filetype : 'png';
 			this.svgSupport = this.supportsSvg();
 			if(!this.svgSupport){
 				this.images = document.getElementsByTagName('img');
