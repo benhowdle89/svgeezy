@@ -26,7 +26,7 @@ var svgeezy = function(){
 			} else {
 				 this.filetype = 'png';
 			}
-			this.svgSupport = this.supportsSvg;
+			this.svgSupport = this.supportsSvg();
 			this.images = document.getElementsByTagName('img');
 			this.imgL = this.images.length;
 			this.fallbacks();
