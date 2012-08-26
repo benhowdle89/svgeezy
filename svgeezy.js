@@ -27,9 +27,11 @@ var svgeezy = function(){
 				 this.filetype = 'png';
 			}
 			this.svgSupport = this.supportsSvg();
-			this.images = document.getElementsByTagName('img');
-			this.imgL = this.images.length;
-			this.fallbacks();
+			if(!this.svgSupport){
+				this.images = document.getElementsByTagName('img');
+				this.imgL = this.images.length;
+				this.fallbacks();
+			}
 		},
 		
 		fallbacks: function(){
