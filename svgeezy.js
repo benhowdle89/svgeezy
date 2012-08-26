@@ -29,6 +29,7 @@ var svgeezy = function(){
 			this.svgSupport = this.supportsSvg;
 			this.images = document.getElementsByTagName('img');
 			this.imgL = this.images.length;
+			this.fallbacks();
 		},
 		
 		fallbacks: function(){
