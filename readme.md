@@ -1,7 +1,7 @@
 # SVGeezy
 ### A JavaScript plugin to handle your images in browsers that don't support SVGs
 
-SVGeezy is in essence, a fallback plugin. It allows you to use SVGs for all your assets giving you complete resolution independence.
+SVGeezy is in essence, a fallback plugin. It allows you to use SVGs for all your assets, giving you complete resolution independence.
 
 It checks if the browser supports SVGs, if not, changes the _src_ of the image to a _.png_ instead (or whatever you pass in).
 
