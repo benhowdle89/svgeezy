@@ -15,7 +15,7 @@
 
 var svgeezy = function(){
 
-	var imvl, avoid, svgSupport, filetype, images = [];
+	var imgL, avoid, svgSupport, filetype, images = [];
 
 	return {
 
