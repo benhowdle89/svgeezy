@@ -37,12 +37,10 @@ var svgeezy = function(){
 		fallbacks: function(){
 			while(this.imgL--){
 				if(!this.hasClass(this.images[this.imgL], this.avoid)){
-					if(!this.svgSupport){
-						var src = this.images[this.imgL].getAttribute('src');
-						if(this.getFileExt(src) == 'svg'){
-							var newSrc = src.replace('.svg', '.' + this.filetype);
-							this.images[this.imgL].setAttribute('src', newSrc);
-						}
+					var src = this.images[this.imgL].getAttribute('src');
+					if(this.getFileExt(src) == 'svg'){
+						var newSrc = src.replace('.svg', '.' + this.filetype);
+						this.images[this.imgL].setAttribute('src', newSrc);
 					}
 				}
 			}
