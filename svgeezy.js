@@ -20,7 +20,7 @@ var svgeezy = function(){
 	return {
 
 		init: function(avoid, filetype){
-			if(avoid !== undefined && avoid !== '') this.avoid = avoid;
+			this.avoid = (avoid !== undefined && avoid !== '') ? avoid : '';
 			if(filetype !== undefined && filetype !== ''){
 				 this.filetype = filetype;
 			} else {
