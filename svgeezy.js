@@ -20,8 +20,8 @@ var svgeezy = function(){
 	return {
 
 		init: function(avoid, filetype){
-			this.avoid = (avoid !== undefined && avoid !== '') ? avoid : '';
-			this.filetype = (filetype !== undefined && filetype !== '') ? filetype : 'png';
+			this.avoid = avoid || '';
+			this.filetype = filetype || 'png';
 			this.svgSupport = this.supportsSvg();
 			if(!this.svgSupport){
 				this.images = document.getElementsByTagName('img');
