@@ -15,8 +15,6 @@
 
 var svgeezy = function(){
 
-	var imgL, avoid, svgSupport, filetype, images = [];
-
 	return {
 
 		init: function(avoid, filetype){
@@ -53,9 +51,8 @@ var svgeezy = function(){
 		supportsSvg: function(){
 			if(window.SVGAngle || document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {
 			    return true;
-			} else {
-			    return false;
 			}
+			return false;
 		}
 	};
 
