@@ -27,11 +27,14 @@ var svgeezy = function(){
 				this.fallbacks();
 			}
 		},
-		
+
 		fallbacks: function(){
 			while(this.imgL--){
 				if(!this.hasClass(this.images[this.imgL], this.avoid)){
 					var src = this.images[this.imgL].getAttribute('src');
+					if (src === null) {
+						continue;
+					}
 					if(this.getFileExt(src) == 'svg'){
 						var newSrc = src.replace('.svg', '.' + this.filetype);
 						this.images[this.imgL].setAttribute('src', newSrc);
@@ -39,18 +42,18 @@ var svgeezy = function(){
 				}
 			}
 		},
-		
+
 		getFileExt: function(src){
 			return src.split('.').pop();
 		},
-		
+
 		hasClass: function(element, cls) {
-		    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+			return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
 		},
-		
+
 		supportsSvg: function(){
 			if(window.SVGAngle || document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {
-			    return true;
+				return true;
 			}
 			return false;
 		}
