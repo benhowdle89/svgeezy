@@ -8,7 +8,11 @@ It checks if the browser supports SVGs, if not, changes the _src_ of the image t
 ### Use
 
 	svgeezy.init('nocheck', 'png');
+
+	// or 
+
+	svgeezy.init(false, 'png');	// this will let the plugin check all images
 	
-The first parameter is a class to tell the code not to check. This may be because you have no fallbacks for certain SVGs. 
+The first parameter is a class to tell the code not to check. Feel free to pass in `false` if you want SVGeezy to check all images. This may be because you have no fallbacks for certain SVGs. 
 
 The second is a filetype, this can be anything you want, just make sure the file path resolves to an image. ie. _'/images/logo.svg'_, will be replaced with _'/images/logo.png'_.

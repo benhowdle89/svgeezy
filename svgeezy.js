@@ -18,7 +18,7 @@ var svgeezy = function(){
 	return {
 
 		init: function(avoid, filetype){
-			this.avoid = avoid || '';
+			this.avoid = avoid || false;
 			this.filetype = filetype || 'png';
 			this.svgSupport = this.supportsSvg();
 			if(!this.svgSupport){
@@ -30,7 +30,7 @@ var svgeezy = function(){
 
 		fallbacks: function(){
 			while(this.imgL--){
-				if(!this.hasClass(this.images[this.imgL], this.avoid)){
+				if(this.avoid && !this.hasClass(this.images[this.imgL], this.avoid)){
 					var src = this.images[this.imgL].getAttribute('src');
 					if (src === null) {
 						continue;
@@ -52,7 +52,7 @@ var svgeezy = function(){
 		},
 
 		supportsSvg: function(){
-			return document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1")
+			return document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1");
 		}
 	};
 
