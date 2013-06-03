@@ -44,7 +44,13 @@ var svgeezy = function() {
 			},
 
 			getFileExt: function(src) {
-				return src.split('.').pop();
+				var ext = src.split('.').pop();
+
+        			if(ext.indexOf("?") !== -1) {
+          				ext = ext.split('?')[0];
+        			}
+
+        			return ext;
 			},
 
 			hasClass: function(element, cls) {
