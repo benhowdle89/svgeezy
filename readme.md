@@ -5,6 +5,10 @@ SVGeezy is in essence, a fallback plugin. It allows you to use SVGs for all your
 
 It checks if the browser supports SVGs, if not, changes the _src_ of the image to a _.png_ instead (or whatever you pass in).
 
+### Installing SVGeezy
+
+SVGeezy can being installed using bower with `bower install svgeezy`. Alternatively, you can download or clone this repo manually.
+
 ### Use
 
 	svgeezy.init('nocheck', 'png'); // this will tell the plugin to not check images with a class of 'nocheck'
