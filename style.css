@@ -1,0 +1,317 @@
+/* Base */
+
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background: url("images/body-light-burst.jpg") no-repeat top center,
+				#5b487d url("images/body-bg.png");
+	color: #fff;
+	font-family: "futura-pt", helvetica neue, helvetica, arial;
+	font-weight: 400;
+	font-size: 20px;
+	text-shadow: 0 1px rgba(0,0,0,.2);
+	padding: 0 30px;
+	line-height: 30px;
+}
+
+.body-container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.half-col {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;  
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 50%;
+	float: left;
+}
+
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+/* Type */
+
+h1 {
+	font-family: "Damion";
+	font-size: 5.750em; /* = 115px */
+	margin: 60px 0 60px 0;
+	line-height: 150px;
+	text-shadow: 0 3px rgba(0,0,0,.2);
+	font-weight: normal;
+}
+
+h2 {
+	display: block;
+	text-align: center;
+	font-size: 2.750em; /* = 55px */
+	margin: 0 0 60px 0;
+	line-height: 60px;
+	text-shadow: 0 2px rgba(0,0,0,.2);
+}
+
+h3 {
+	font-size: 1.400em; /* = 28px */
+	margin: 0 0 30px 0;
+}
+
+p {
+	margin: 0 0 30px 0;
+}
+
+/* Links */
+
+a {
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.butt {
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	display: inline-block;
+	font-weight: 700;
+	font-style: italic;
+	-webkit-box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.2),
+						0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.2),
+				0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.butt:active {
+	-webkit-box-shadow: 0px -2px 0px 2px rgba(0, 0, 0, 0.1),
+						inset 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px -2px 0px 2px rgba(0, 0, 0, 0.1),
+				inset 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.download-github {
+	padding: 25px;
+	font-size: 1.400em; /* = 28px */
+	background-color: #c76ea5;
+	background-image: -webkit-linear-gradient(top, #ca75aa, #b95891); 
+	background-image: -moz-linear-gradient(top, #ca75aa, #b95891);
+	background-image: -ms-linear-gradient(top, #ca75aa, #b95891);
+	background-image: -o-linear-gradient(top, #ca75aa, #b95891);
+}
+
+.download-github:hover {
+	background-color: #d07cb0;
+	background-image: -webkit-linear-gradient(top, #e89ccc, #ca75aa); 
+	background-image: -moz-linear-gradient(top, #e89ccc, #ca75aa);
+	background-image: -ms-linear-gradient(top, #e89ccc, #ca75aa);
+	background-image: -o-linear-gradient(top, #e89ccc, #ca75aa);
+}
+
+.share-twitter {
+	padding: 18px 25px;
+	background-color: #17b5b8;
+	background-image: -webkit-linear-gradient(top, #1ebabd, #0fa5a8); 
+	background-image: -moz-linear-gradient(top, #1ebabd, #0fa5a8);
+	background-image: -ms-linear-gradient(top, #1ebabd, #0fa5a8);
+	background-image: -o-linear-gradient(top, #1ebabd, #0fa5a8);
+}
+
+.share-twitter:hover {
+	background-color: #6bccce;
+	background-image: -webkit-linear-gradient(top, #6bccce, #1ebabd); 
+	background-image: -moz-linear-gradient(top, #6bccce, #1ebabd);
+	background-image: -ms-linear-gradient(top, #6bccce, #1ebabd);
+	background-image: -o-linear-gradient(top, #6bccce, #1ebabd);
+}
+
+/* Header */
+
+header {
+	text-align: center;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.title h1 {
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.title span {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.title p {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	font-family: "Damion";
+	font-size: 1.6em;
+	line-height: 50px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+	color: #f0d9ff;
+}
+
+.title:hover p {
+	opacity: 1;
+}
+
+.title:hover h1 {
+	opacity: 0;
+}
+
+.intro-paragraph {
+	font-size: 1.400em; /* = 28px */
+	display: inline-block;
+	width: 80%;
+	min-width: 700px;
+	line-height: 35px;
+}
+
+/* Downloads */
+
+.download-and-share {
+	text-align: center;
+	font-weight: bold;
+}
+
+.download-and-share p {
+	margin-bottom: 15px;
+}
+
+/* Why Use? */
+
+.why-use-svg {
+	background: url("images/shadow.png") no-repeat top center;
+	margin: 70px 0 0 0;
+	padding-top: 70px;
+}
+
+.demo p {
+	float: left;
+	margin-right: 50px;
+}
+
+.demo p:last-child {
+	margin-right: 0;
+}
+
+.demo img {
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
+.demo img:first-of-type {
+	margin-left: 0;
+}
+
+.demo span {
+	font-weight: 700;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.want-to-know-more {
+	text-align: center;
+	width: 100%;
+	font-size: 1.400em; /* = 28px */
+	font-style: italic;
+	padding: 30px 0;
+	line-height: 40px;
+	border-top: 1px rgba(255,255,255,.2) solid;
+	border-bottom: 1px rgba(255,255,255,.2) solid;
+	margin-top: 60px;
+}
+
+/* Footer/Credits */
+
+footer {
+	font-size: 0.750em; /* = 15px */
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica;
+	margin: 60px 0 30px 0;
+	padding-top: 65px;
+}
+
+footer a {
+	position: relative;
+}
+
+footer span {
+	opacity: 0;
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	margin-left: -30px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+footer a:hover, .want-to-know-more a:hover {
+	color: #bb9aed;
+}
+
+footer a:hover span {
+	opacity: 1;
+	top: -68px;
+}
+
+/* Icon Fonts */
+
+@font-face {
+  font-family: "SocialFoundicons";
+  src: url("icon-fonts/social_foundicons.eot");
+  src: url("icon-fonts/social_foundicons.eot?#iefix") format("embedded-opentype"), url("icon-fonts/social_foundicons.woff") format("woff"), url("icon-fonts/social_foundicons.ttf") format("truetype"), url("icon-fonts/social_foundicons.svg#SocialFoundicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*="foundicon-"]:before {
+  font-family: "SocialFoundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  margin: -4px 8px 0 0;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 1.3em;
+}
+
+.foundicon-twitter:before {
+  content: "\f004";
+}
+
+.foundicon-github:before {
+  content: "\f006";
+}
