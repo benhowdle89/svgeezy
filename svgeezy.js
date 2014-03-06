@@ -13,7 +13,7 @@
 	svgeezy.init('nocheck', 'png');
 */
 
-var svgeezy = function() {
+window.svgeezy = function() {
 
 		return {
 
