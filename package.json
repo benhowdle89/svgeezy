@@ -6,6 +6,7 @@
     "type": "git",
     "url": "git://github.com/benhowdle89/svgeezy"
   },
+  "main": "svgeezy.js",  
   "keywords": [
     "svg",
     "fallback",
