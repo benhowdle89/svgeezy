@@ -1,0 +1,22 @@
+{
+  "name": "svgeezy",
+  "version": "1.0.0",
+  "description": "A simple JavaScript plugin which detects SVG images on your website, and automatically looks for a standard image fallback for those older, less capable browsers.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benhowdle89/svgeezy"
+  },
+  "keywords": [
+    "svg",
+    "fallback",
+    "png",
+    "javascript"
+  ],
+  "contributors": [
+    "Ben Howdle",
+    "Jack Smith"
+  ],
+  "bugs": {
+    "url": "https://github.com/benhowdle89/svgeezy/issues"
+  }
+}
