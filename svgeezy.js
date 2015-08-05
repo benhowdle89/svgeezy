@@ -34,10 +34,7 @@ window.svgeezy = function() {
 					continue;
 				}
 				var src = this.images[this.imgL].getAttribute('src');
-				if(src === null) {
-					continue;
-				}
-				if(this.getFileExt(src) != 'svg') {
+				if(src === null || this.getFileExt(src) != 'svg') {
 					continue;
 				}
 				var newSrc = src.replace('.svg', '.' + this.filetype);
