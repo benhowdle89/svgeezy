@@ -29,7 +29,7 @@ window.svgeezy = function() {
 			},
 
 			fallbacks: function() {
-				while(this.imgL--) {
+				while(--this.imgL) {
 					if(!this.hasClass(this.images[this.imgL], this.avoid) || !this.avoid) {
 						var src = this.images[this.imgL].getAttribute('src');
 						if(src === null) {
