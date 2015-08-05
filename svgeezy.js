@@ -30,16 +30,19 @@ window.svgeezy = function() {
 
 			fallbacks: function() {
 				while(--this.imgL) {
-					if(!this.hasClass(this.images[this.imgL], this.avoid) || !this.avoid) {
-						var src = this.images[this.imgL].getAttribute('src');
-						if(src === null) {
-							continue;
-						}
-						if(this.getFileExt(src) == 'svg') {
-							var newSrc = src.replace('.svg', '.' + this.filetype);
-							this.images[this.imgL].setAttribute('src', newSrc);
-						}
+					if(this.avoid && this.hasClass(this.images[this.imgL], this.avoid)) {
+						continue;
 					}
+					var src = this.images[this.imgL].getAttribute('src');
+					if(src === null) {
+						continue;
+					}
+					if(this.getFileExt(src) != 'svg') {
+						continue;
+					}
+					var newSrc = src.replace('.svg', '.' + this.filetype);
+					this.images[this.imgL].setAttribute('src', newSrc);
+					
 				}
 			},
 
