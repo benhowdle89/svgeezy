@@ -1,9 +1,7 @@
 /*
- * SVGeezy.js 1.0
+ * SVGeezy.js
  *
- * Copyright 2012, Ben Howdle http://twostepmedia.co.uk
- * Released under the WTFPL license
- * http://sam.zoy.org/wtfpl/
+ * Copyright 2016, Ben Howdle http://benhowdle.im
  *
  * Date: Sun Aug 26 20:38 2012 GMT
  */
