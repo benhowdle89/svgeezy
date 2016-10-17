@@ -15,10 +15,10 @@ window.svgeezy = function() {
 
 	return {
 
-		init: function(avoid, filetype) {
+		init: function(avoid, filetype, forceFallbackAlways) {
 			this.avoid = avoid || false;
 			this.filetype = filetype || 'png';
-			this.svgSupport = this.supportsSvg();
+			this.svgSupport = !forceFallbackAlways || this.supportsSvg();
 			if(!this.svgSupport) {
 				this.images = document.getElementsByTagName('img');
 				this.imgL = this.images.length;
@@ -27,6 +27,9 @@ window.svgeezy = function() {
 		},
 
 		fallbacks: function() {
+			if (this.imgL == 0) {
+				return;
+			}
 			while(--this.imgL) {
 				if(this.avoid && this.hasClass(this.images[this.imgL], this.avoid)) {
 					continue;
