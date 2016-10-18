@@ -18,7 +18,7 @@ window.svgeezy = function() {
 		init: function(avoid, filetype, forceFallbackAlways) {
 			this.avoid = avoid || false;
 			this.filetype = filetype || 'png';
-			this.svgSupport = false
+			this.svgSupport = false;
 			if (!forceFallbackAlways) {
 				this.svgSupport = this.supportsSvg();
 			}
